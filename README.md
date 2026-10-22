@@ -1,6 +1,6 @@
 # VidoByte Smart Video Compressor — Third-Party Source
 
-This public repository documents the third-party open-source components included in the Windows x64 **VidoByte 0.3.4 and 0.3.5** *release candidates*. It is **not** the proprietary VidoByte application source repository.
+This public repository documents the third-party open-source components included in the Windows x64 **VidoByte 0.3.4, 0.3.5 and 0.3.6** *release candidates*. It is **not** the proprietary VidoByte application source repository.
 
 > **Release status:** Technical testing and local Windows App Certification Kit validation have passed, but the application is **not yet cleared for public/commercial distribution**. Third-party redistribution requirements and codec patent rights still need final review.
 
@@ -26,7 +26,7 @@ To inspect the version and exact configure flags of a distributed binary, run `f
 | MinGW-w64 GCC runtime | GCC 16.2 toolchain | [MSYS2 packages](https://packages.msys2.org/) · GPL and applicable GCC runtime exceptions |
 | Winpthreads | MSYS2 UCRT64 | [MinGW-w64](https://www.mingw-w64.org/) · separate redistribution terms |
 
-The app installation includes corresponding third-party license notices in its `ThirdParty/` directory. This repository contains the reproducible build recipe; the publicly posted source-offer bundle is linked below. The same custom FFmpeg 9.0.2 binaries are used for VidoByte 0.3.4 and 0.3.5; the 0.3.5 changes affect the application’s stream mapping and preservation behavior.
+The app installation includes corresponding third-party license notices in its `ThirdParty/` directory. This repository contains the reproducible build recipe; the publicly posted source-offer bundle is linked below. The same custom FFmpeg 9.0.2 binaries are used across VidoByte 0.3.4–0.3.6. Version 0.3.5 changed the application's stream preservation behavior; version 0.3.6 adds an offline self-diagnostic. Neither changes the bundled FFmpeg build.
 
 ## Third-party source bundle
 
