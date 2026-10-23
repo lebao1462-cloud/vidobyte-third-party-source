@@ -36,6 +36,17 @@ The prepared source-offer archive is available publicly:
 
 It contains the upstream FFmpeg source archive, Windows build script, and selected license material. The complete corresponding-source and transitive dependency obligations still require review. Merely linking upstream sources is not necessarily sufficient.
 
+## Version-pinned dependency sources (for audit)
+
+The redistributed release-candidate binaries use these precise upstream versions. These links supplement, but do not replace, the existing source-offer archive or a complete corresponding-source review:
+
+- **dav1d 1.5.4**: [VideoLAN source tarball](https://downloads.videolan.org/pub/videolan/dav1d/1.5.4/dav1d-1.5.4.tar.xz) and [upstream SHA-256](https://downloads.videolan.org/pub/videolan/dav1d/1.5.4/dav1d-1.5.4.tar.xz.sha256).
+- **SVT-AV1 4.2.0**: [GitLab tag v4.2.0](https://gitlab.com/AOMediaCodec/SVT-AV1/-/tags/v4.2.0) and [source tarball](https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v4.2.0/SVT-AV1-v4.2.0.tar.gz).
+- **MinGW-w64 winpthreads 14.0.0.r495.g63ebe6cdb-2**: [MSYS2 source-only release](https://mirror.msys2.org/mingw/sources/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-2.src.tar.zst). This package may contain a build recipe that fetches further upstream sources.
+- **GCC libgcc/libstdc++ 16.2.0-6**: obtain matching source/build recipes and runtime-exception notices from the [MSYS2 package records](https://packages.msys2.org/).
+
+**Audit note (2026-10-23):** The public `VidoByte_0.3.4_ThirdParty_Source_Offer.zip` currently contains the FFmpeg tarball, a build script and selected license texts, **not** all of the source archives linked above. A separate local supplemental draft has been prepared for review. Full dependency attribution, version matching, LGPL/GCC runtime obligations and patent rights remain to be confirmed prior to public/commercial distribution.
+
 ## License and patents
 
 Open-source software licensing is distinct from codec patent licensing. Using Windows Media Foundation and removing OpenH264 **does not by itself establish commercial H.264 patent clearance** in every market. Verify patent rights and third-party license obligations before distributing commercially.
