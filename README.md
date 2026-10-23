@@ -2,7 +2,7 @@
 
 This public repository documents the third-party open-source components included in the Windows x64 **VidoByte 0.3.4, 0.3.5 and 0.3.6** *release candidates*. It is **not** the proprietary VidoByte application source repository.
 
-> **Release status:** Technical testing and local Windows App Certification Kit validation have passed, but the application is **not yet cleared for public/commercial distribution**. Third-party redistribution requirements and codec patent rights still need final review.
+> **Release status:** Windows 10 and Windows 11 installed-MSIX GUI QA and local Windows App Certification Kit validation have passed, but the application is **not yet cleared for public/commercial distribution**. Third-party redistribution requirements and codec patent rights still need final review.
 
 ## FFmpeg 9.0.2
 
@@ -43,7 +43,7 @@ The redistributed release-candidate binaries use these precise upstream versions
 - **dav1d 1.5.4**: [VideoLAN source tarball](https://downloads.videolan.org/pub/videolan/dav1d/1.5.4/dav1d-1.5.4.tar.xz) and [upstream SHA-256](https://downloads.videolan.org/pub/videolan/dav1d/1.5.4/dav1d-1.5.4.tar.xz.sha256).
 - **SVT-AV1 4.2.0**: [GitLab tag v4.2.0](https://gitlab.com/AOMediaCodec/SVT-AV1/-/tags/v4.2.0) and [source tarball](https://gitlab.com/AOMediaCodec/SVT-AV1/-/archive/v4.2.0/SVT-AV1-v4.2.0.tar.gz).
 - **MinGW-w64 winpthreads 14.0.0.r495.g63ebe6cdb-2**: [MSYS2 source-only release](https://mirror.msys2.org/mingw/sources/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-2.src.tar.zst). This package may contain a build recipe that fetches further upstream sources.
-- **GCC libgcc/libstdc++ 16.2.0-6**: obtain matching source/build recipes and runtime-exception notices from the [MSYS2 package records](https://packages.msys2.org/).
+- **GCC libgcc/libstdc++ 16.2.0-6**: [MSYS2 exact-version source-only tarball](https://mirror.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-6.src.tar.zst), [MSYS2 libgcc 16.2.0-6 binary/license manifest](https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-libgcc) and [GCC Runtime Library Exception 3.1](https://www.gnu.org/licenses/gcc-exception-3.1.html). The source-only package may reference separate GCC upstream tarballs; its completeness for this build remains under review.
 
 **Audit note (2026-10-23):** The public `VidoByte_0.3.4_ThirdParty_Source_Offer.zip` currently contains the FFmpeg tarball, a build script and selected license texts, **not** all of the source archives linked above. A separate local supplemental draft has been prepared for review. Full dependency attribution, version matching, LGPL/GCC runtime obligations and patent rights remain to be confirmed prior to public/commercial distribution.
 
